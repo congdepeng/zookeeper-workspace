@@ -1,0 +1,81 @@
+2014-01-23 01:49:30,677 [myid:] - INFO  [main:QuorumPeerConfig@101] - Reading configuration from: /Users/depeng/github/depeng/zookeeper-workspace/app1/zookeeper-3/bin/../conf/zoo.cfg
+2014-01-23 01:49:30,681 [myid:] - INFO  [main:QuorumPeerConfig@334] - Defaulting to majority quorums
+2014-01-23 01:49:30,685 [myid:3] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2014-01-23 01:49:30,686 [myid:3] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2014-01-23 01:49:30,686 [myid:3] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2014-01-23 01:49:30,696 [myid:3] - INFO  [main:QuorumPeerMain@127] - Starting quorum peer
+2014-01-23 01:49:30,709 [myid:3] - INFO  [main:NIOServerCnxnFactory@94] - binding to port 0.0.0.0/0.0.0.0:2183
+2014-01-23 01:49:30,733 [myid:3] - INFO  [main:QuorumPeer@913] - tickTime set to 2000
+2014-01-23 01:49:30,734 [myid:3] - INFO  [main:QuorumPeer@933] - minSessionTimeout set to -1
+2014-01-23 01:49:30,734 [myid:3] - INFO  [main:QuorumPeer@944] - maxSessionTimeout set to -1
+2014-01-23 01:49:30,735 [myid:3] - INFO  [main:QuorumPeer@959] - initLimit set to 10
+2014-01-23 01:49:30,748 [myid:3] - INFO  [main:FileSnap@83] - Reading snapshot ./data/version-2/snapshot.100000002
+2014-01-23 01:49:30,760 [myid:3] - INFO  [Thread-1:QuorumCnxManager$Listener@486] - My election bind port: 0.0.0.0/0.0.0.0:4445
+2014-01-23 01:49:30,771 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:QuorumPeer@670] - LOOKING
+2014-01-23 01:49:30,773 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:FastLeaderElection@740] - New election. My id =  3, proposed zxid=0x100000002
+2014-01-23 01:49:30,777 [myid:3] - WARN  [WorkerSender[myid=3]:QuorumCnxManager@368] - Cannot open channel to 1 at election address /127.0.0.1:2223
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:354)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:327)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:393)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:365)
+	at java.lang.Thread.run(Thread.java:744)
+2014-01-23 01:49:30,785 [myid:3] - INFO  [WorkerReceiver[myid=3]:FastLeaderElection@542] - Notification: 2 (n.leader), 0x100000002 (n.zxid), 0x3 (n.round), LOOKING (n.state), 2 (n.sid), 0x2 (n.peerEPoch), LOOKING (my state)
+2014-01-23 01:49:30,786 [myid:3] - INFO  [WorkerReceiver[myid=3]:FastLeaderElection@542] - Notification: 3 (n.leader), 0x100000002 (n.zxid), 0x1 (n.round), LOOKING (n.state), 3 (n.sid), 0x2 (n.peerEPoch), LOOKING (my state)
+2014-01-23 01:49:30,787 [myid:3] - INFO  [WorkerReceiver[myid=3]:FastLeaderElection@542] - Notification: 2 (n.leader), 0x100000002 (n.zxid), 0x3 (n.round), LOOKING (n.state), 2 (n.sid), 0x2 (n.peerEPoch), LOOKING (my state)
+2014-01-23 01:49:30,788 [myid:3] - WARN  [WorkerSender[myid=3]:QuorumCnxManager@368] - Cannot open channel to 1 at election address /127.0.0.1:2223
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:354)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:327)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:393)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:365)
+	at java.lang.Thread.run(Thread.java:744)
+2014-01-23 01:49:30,789 [myid:3] - INFO  [WorkerReceiver[myid=3]:FastLeaderElection@542] - Notification: 3 (n.leader), 0x100000002 (n.zxid), 0x3 (n.round), LOOKING (n.state), 3 (n.sid), 0x2 (n.peerEPoch), LOOKING (my state)
+2014-01-23 01:49:30,791 [myid:3] - INFO  [WorkerReceiver[myid=3]:FastLeaderElection@542] - Notification: 3 (n.leader), 0x100000002 (n.zxid), 0x3 (n.round), LOOKING (n.state), 2 (n.sid), 0x2 (n.peerEPoch), LOOKING (my state)
+2014-01-23 01:49:30,993 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:QuorumPeer@750] - LEADING
+2014-01-23 01:49:30,998 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Leader@58] - TCP NoDelay set to: true
+2014-01-23 01:49:31,091 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+2014-01-23 01:49:31,091 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:host.name=congs-mbp
+2014-01-23 01:49:31,091 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:java.version=1.7.0_45
+2014-01-23 01:49:31,092 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:java.vendor=Oracle Corporation
+2014-01-23 01:49:31,092 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre
+2014-01-23 01:49:31,092 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:java.class.path=/Users/depeng/github/depeng/zookeeper-workspace/app1/zookeeper-3/bin/../build/classes:/Users/depeng/github/depeng/zookeeper-workspace/app1/zookeeper-3/bin/../build/lib/*.jar:/Users/depeng/github/depeng/zookeeper-workspace/app1/zookeeper-3/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/depeng/github/depeng/zookeeper-workspace/app1/zookeeper-3/bin/../lib/slf4j-api-1.6.1.jar:/Users/depeng/github/depeng/zookeeper-workspace/app1/zookeeper-3/bin/../lib/netty-3.2.2.Final.jar:/Users/depeng/github/depeng/zookeeper-workspace/app1/zookeeper-3/bin/../lib/log4j-1.2.15.jar:/Users/depeng/github/depeng/zookeeper-workspace/app1/zookeeper-3/bin/../lib/jline-0.9.94.jar:/Users/depeng/github/depeng/zookeeper-workspace/app1/zookeeper-3/bin/../zookeeper-3.4.5.jar:/Users/depeng/github/depeng/zookeeper-workspace/app1/zookeeper-3/bin/../src/java/lib/*.jar:/Users/depeng/github/depeng/zookeeper-workspace/app1/zookeeper-3/bin/../conf:
+2014-01-23 01:49:31,092 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:java.library.path=/Users/depeng/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2014-01-23 01:49:31,093 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:java.io.tmpdir=/var/folders/vk/v296wx7d0kx7h9ttgp92x_hr0000gn/T/
+2014-01-23 01:49:31,093 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:java.compiler=<NA>
+2014-01-23 01:49:31,093 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:os.name=Mac OS X
+2014-01-23 01:49:31,094 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:os.arch=x86_64
+2014-01-23 01:49:31,094 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:os.version=10.9.1
+2014-01-23 01:49:31,094 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:user.name=depeng
+2014-01-23 01:49:31,094 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:user.home=/Users/depeng
+2014-01-23 01:49:31,095 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Environment@100] - Server environment:user.dir=/Users/depeng/github/depeng/zookeeper-workspace/app1/zookeeper-3/bin
+2014-01-23 01:49:31,097 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:ZooKeeperServer@162] - Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir ./data/version-2 snapdir ./data/version-2
+2014-01-23 01:49:31,101 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:Leader@345] - LEADING - LEADER ELECTION TOOK - 328
+2014-01-23 01:49:31,104 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:FileSnap@83] - Reading snapshot ./data/version-2/snapshot.100000002
+2014-01-23 01:49:31,107 [myid:3] - INFO  [QuorumPeer[myid=3]/0:0:0:0:0:0:0:0:2183:FileTxnSnapLog@240] - Snapshotting: 0x100000002 to ./data/version-2/snapshot.100000002
+2014-01-23 01:49:31,702 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxnFactory@197] - Accepted socket connection from /127.0.0.1:49996
+2014-01-23 01:49:31,705 [myid:3] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxn@354] - Exception causing close of session 0x0 due to java.io.IOException: ZooKeeperServer not running
+2014-01-23 01:49:31,706 [myid:3] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2183:NIOServerCnxn@1001] - Closed socket connection for client /127.0.0.1:49996 (no session established for client)
+2014-01-23 01:49:32,004 [myid:3] - INFO  [LearnerHandler-/127.0.0.1:49997:LearnerHandler@263] - Follower sid: 2 : info : org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer@73871392
+2014-01-23 01:49:32,007 [myid:3] - INFO  [LearnerHandler-/127.0.0.1:49997:LearnerHandler@318] - Synchronizing with Follower sid: 2 maxCommittedLog=0x0 minCommittedLog=0x0 peerLastZxid=0x100000002
+2014-01-23 01:49:32,008 [myid:3] - INFO  [LearnerHandler-/127.0.0.1:49997:LearnerHandler@395] - Sending DIFF
+2014-01-23 01:49:32,011 [myid:3] - WARN  [LearnerHandler-/127.0.0.1:49997:Leader@574] - Commiting zxid 0x300000000 from /127.0.0.1:4444 not first!
+2014-01-23 01:49:32,012 [myid:3] - WARN  [LearnerHandler-/127.0.0.1:49997:Leader@576] - First is 0x0
+2014-01-23 01:49:32,012 [myid:3] - INFO  [LearnerHandler-/127.0.0.1:49997:Leader@598] - Have quorum of supporters; starting up and setting last processed zxid: 0x300000000
+2014-01-23 01:49:32,607 [myid:3] - INFO  [SyncThread:3:FileTxnLog@199] - Creating new log file: log.300000001
+2014-01-23 02:01:24,001 [myid:3] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x243bb0efb040000, timeout of 30000ms exceeded
+2014-01-23 02:01:24,001 [myid:3] - INFO  [ProcessThread(sid:3 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x243bb0efb040000
+2014-01-23 02:06:44,001 [myid:3] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x243bb123fe90001, timeout of 30000ms exceeded
+2014-01-23 02:06:44,001 [myid:3] - INFO  [ProcessThread(sid:3 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x243bb123fe90001
