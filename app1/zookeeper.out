@@ -1,8 +1,8 @@
-2014-01-23 02:00:33,758 [myid:] - INFO  [main:QuorumPeerConfig@101] - Reading configuration from: /Users/depeng/github/depeng/zookeeper-workspace/app1/zookeeper-4/bin/../conf/zoo.cfg
-2014-01-23 02:00:33,762 [myid:] - WARN  [main:QuorumPeerConfig@290] - Non-optimial configuration, consider an odd number of servers.
-2014-01-23 02:00:33,763 [myid:] - INFO  [main:QuorumPeerConfig@334] - Defaulting to majority quorums
-2014-01-23 02:00:33,764 [myid:] - ERROR [main:QuorumPeerMain@85] - Invalid config, exiting abnormally
-org.apache.zookeeper.server.quorum.QuorumPeerConfig$ConfigException: Error processing /Users/depeng/github/depeng/zookeeper-workspace/app1/zookeeper-4/bin/../conf/zoo.cfg
+2014-01-25 23:14:34,448 [myid:] - INFO  [main:QuorumPeerConfig@101] - Reading configuration from: /Users/depeng/github/depeng/zookeeper-workspace/app1/zookeeper-1/bin/../conf/zoo.cfg
+2014-01-25 23:14:34,460 [myid:] - WARN  [main:QuorumPeerConfig@290] - Non-optimial configuration, consider an odd number of servers.
+2014-01-25 23:14:34,460 [myid:] - INFO  [main:QuorumPeerConfig@334] - Defaulting to majority quorums
+2014-01-25 23:14:34,462 [myid:] - ERROR [main:QuorumPeerMain@85] - Invalid config, exiting abnormally
+org.apache.zookeeper.server.quorum.QuorumPeerConfig$ConfigException: Error processing /Users/depeng/github/depeng/zookeeper-workspace/app1/zookeeper-1/bin/../conf/zoo.cfg
 	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:121)
 	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:101)
 	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:78)
