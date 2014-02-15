@@ -61,3 +61,144 @@ java.net.ConnectException: Connection refused
 2014-02-15 14:48:18,000 [myid:2] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x344343e8a330000, timeout of 30000ms exceeded
 2014-02-15 14:48:18,001 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x344343e8a330000
 2014-02-15 14:48:18,002 [myid:2] - INFO  [SyncThread:2:FileTxnLog@199] - Creating new log file: log.600000001
+2014-02-15 14:49:47,543 [myid:2] - INFO  [/127.0.0.1:3334:QuorumCnxManager$Listener@493] - Received connection request /127.0.0.1:55978
+2014-02-15 14:49:47,548 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@542] - Notification: 1 (n.leader), 0x400000004 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x5 (n.peerEPoch), LEADING (my state)
+2014-02-15 14:49:47,553 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@542] - Notification: 2 (n.leader), 0x400000004 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x5 (n.peerEPoch), LEADING (my state)
+2014-02-15 14:49:47,779 [myid:2] - INFO  [LearnerHandler-/127.0.0.1:52637:LearnerHandler@263] - Follower sid: 1 : info : org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer@24ee50b4
+2014-02-15 14:49:47,828 [myid:2] - INFO  [LearnerHandler-/127.0.0.1:52637:LearnerHandler@318] - Synchronizing with Follower sid: 1 maxCommittedLog=0x600000001 minCommittedLog=0x600000001 peerLastZxid=0x400000004
+2014-02-15 14:49:47,828 [myid:2] - WARN  [LearnerHandler-/127.0.0.1:52637:LearnerHandler@379] - Unhandled proposal scenario
+2014-02-15 14:49:47,828 [myid:2] - INFO  [LearnerHandler-/127.0.0.1:52637:LearnerHandler@395] - Sending SNAP
+2014-02-15 14:49:47,829 [myid:2] - INFO  [LearnerHandler-/127.0.0.1:52637:LearnerHandler@419] - Sending snapshot last zxid of peer is 0x400000004  zxid of leader is 0x600000001sent zxid of db as 0x600000001
+2014-02-15 14:51:31,067 [myid:2] - ERROR [LearnerHandler-/127.0.0.1:52571:LearnerHandler@562] - Unexpected exception causing shutdown while sock still open
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:63)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:83)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:108)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:476)
+2014-02-15 14:51:31,067 [myid:2] - WARN  [RecvWorker:3:QuorumCnxManager$RecvWorker@762] - Connection broken for id 3, my id = 2, error = 
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:747)
+2014-02-15 14:51:31,068 [myid:2] - WARN  [RecvWorker:3:QuorumCnxManager$RecvWorker@765] - Interrupting SendWorker
+2014-02-15 14:51:31,068 [myid:2] - WARN  [LearnerHandler-/127.0.0.1:52571:LearnerHandler@575] - ******* GOODBYE /127.0.0.1:52571 ********
+2014-02-15 14:51:31,069 [myid:2] - WARN  [SendWorker:3:QuorumCnxManager$SendWorker@679] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2017)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2095)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:389)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.pollSendQueue(QuorumCnxManager.java:831)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.access$500(QuorumCnxManager.java:62)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:667)
+2014-02-15 14:51:31,070 [myid:2] - WARN  [SendWorker:3:QuorumCnxManager$SendWorker@688] - Send worker leaving thread
+2014-02-15 14:53:29,212 [myid:2] - INFO  [/127.0.0.1:3334:QuorumCnxManager$Listener@493] - Received connection request /127.0.0.1:56009
+2014-02-15 14:53:29,213 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@542] - Notification: 3 (n.leader), 0x600000001 (n.zxid), 0x1 (n.round), LOOKING (n.state), 3 (n.sid), 0x6 (n.peerEPoch), LEADING (my state)
+2014-02-15 14:53:29,240 [myid:2] - INFO  [LearnerHandler-/127.0.0.1:52665:LearnerHandler@263] - Follower sid: 3 : info : org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer@1d6dafa2
+2014-02-15 14:53:29,241 [myid:2] - INFO  [LearnerHandler-/127.0.0.1:52665:LearnerHandler@318] - Synchronizing with Follower sid: 3 maxCommittedLog=0x600000001 minCommittedLog=0x600000001 peerLastZxid=0x600000001
+2014-02-15 14:53:29,241 [myid:2] - INFO  [LearnerHandler-/127.0.0.1:52665:LearnerHandler@395] - Sending DIFF
+2014-02-15 14:54:19,312 [myid:2] - ERROR [LearnerHandler-/127.0.0.1:52665:LearnerHandler@562] - Unexpected exception causing shutdown while sock still open
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.jute.BinaryInputArchive.readInt(BinaryInputArchive.java:63)
+	at org.apache.zookeeper.server.quorum.QuorumPacket.deserialize(QuorumPacket.java:83)
+	at org.apache.jute.BinaryInputArchive.readRecord(BinaryInputArchive.java:108)
+	at org.apache.zookeeper.server.quorum.LearnerHandler.run(LearnerHandler.java:476)
+2014-02-15 14:54:19,312 [myid:2] - WARN  [RecvWorker:3:QuorumCnxManager$RecvWorker@762] - Connection broken for id 3, my id = 2, error = 
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:747)
+2014-02-15 14:54:19,313 [myid:2] - WARN  [RecvWorker:3:QuorumCnxManager$RecvWorker@765] - Interrupting SendWorker
+2014-02-15 14:54:19,312 [myid:2] - WARN  [LearnerHandler-/127.0.0.1:52665:LearnerHandler@575] - ******* GOODBYE /127.0.0.1:52665 ********
+2014-02-15 14:54:19,314 [myid:2] - WARN  [SendWorker:3:QuorumCnxManager$SendWorker@679] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2017)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2095)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:389)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.pollSendQueue(QuorumCnxManager.java:831)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.access$500(QuorumCnxManager.java:62)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:667)
+2014-02-15 14:54:19,315 [myid:2] - WARN  [SendWorker:3:QuorumCnxManager$SendWorker@688] - Send worker leaving thread
+2014-02-15 14:55:36,597 [myid:2] - INFO  [/127.0.0.1:3334:QuorumCnxManager$Listener@493] - Received connection request /127.0.0.1:56069
+2014-02-15 14:55:36,599 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@542] - Notification: 3 (n.leader), 0x600000001 (n.zxid), 0x1 (n.round), LOOKING (n.state), 3 (n.sid), 0x6 (n.peerEPoch), LEADING (my state)
+2014-02-15 14:55:36,628 [myid:2] - INFO  [LearnerHandler-/127.0.0.1:52725:LearnerHandler@263] - Follower sid: 3 : info : org.apache.zookeeper.server.quorum.QuorumPeer$QuorumServer@1d6dafa2
+2014-02-15 14:55:36,629 [myid:2] - INFO  [LearnerHandler-/127.0.0.1:52725:LearnerHandler@318] - Synchronizing with Follower sid: 3 maxCommittedLog=0x600000001 minCommittedLog=0x600000001 peerLastZxid=0x600000001
+2014-02-15 14:55:36,629 [myid:2] - INFO  [LearnerHandler-/127.0.0.1:52725:LearnerHandler@395] - Sending DIFF
+2014-02-15 14:56:59,064 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@197] - Accepted socket connection from /127.0.0.1:35962
+2014-02-15 14:56:59,068 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:ZooKeeperServer@839] - Client attempting to establish new session at /127.0.0.1:35962
+2014-02-15 14:56:59,092 [myid:2] - INFO  [CommitProcessor:2:ZooKeeperServer@595] - Established session 0x2443448a1c20000 with negotiated timeout 40000 for client /127.0.0.1:35962
+2014-02-15 14:57:00,113 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x2443448a1c20000 type:create cxid:0x2 zxid:0x600000004 txntype:-1 reqpath:n/a Error Path:/search/front/leader Error:KeeperErrorCode = NoNode for /search/front/leader
+2014-02-15 14:57:00,117 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x2443448a1c20000 type:create cxid:0x3 zxid:0x600000005 txntype:-1 reqpath:n/a Error Path:/search/front Error:KeeperErrorCode = NoNode for /search/front
+2014-02-15 14:57:00,489 [myid:2] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@354] - Exception causing close of session 0x2443448a1c20000 due to java.io.IOException: Connection reset by peer
+2014-02-15 14:57:00,490 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@1001] - Closed socket connection for client /127.0.0.1:35962 which had sessionid 0x2443448a1c20000
+2014-02-15 14:57:22,449 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x144344ede3b0000 type:create cxid:0x2 zxid:0x600000007 txntype:-1 reqpath:n/a Error Path:/search/front Error:KeeperErrorCode = NoNode for /search/front
+2014-02-15 14:57:33,221 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x144344ede3b0000 type:create cxid:0x3 zxid:0x600000008 txntype:-1 reqpath:n/a Error Path:/search/front Error:KeeperErrorCode = NoNode for /search/front
+2014-02-15 14:57:42,000 [myid:2] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x2443448a1c20000, timeout of 40000ms exceeded
+2014-02-15 14:57:42,001 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x2443448a1c20000
+2014-02-15 14:57:58,949 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x144344ede3b0000 type:create cxid:0x6 zxid:0x60000000c txntype:-1 reqpath:n/a Error Path:/search/front Error:KeeperErrorCode = NoNode for /search/front
+2014-02-15 14:58:10,093 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x144344ede3b0000 type:create cxid:0x7 zxid:0x60000000d txntype:-1 reqpath:n/a Error Path:/search/front Error:KeeperErrorCode = NoNode for /search/front
+2014-02-15 14:58:17,141 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x144344ede3b0000 type:create cxid:0x8 zxid:0x60000000e txntype:-1 reqpath:n/a Error Path:/search/front Error:KeeperErrorCode = NoNode for /search/front
+2014-02-15 15:58:48,414 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@197] - Accepted socket connection from /127.0.0.1:37575
+2014-02-15 15:58:48,419 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:ZooKeeperServer@839] - Client attempting to establish new session at /127.0.0.1:37575
+2014-02-15 15:58:48,439 [myid:2] - INFO  [CommitProcessor:2:ZooKeeperServer@595] - Established session 0x2443448a1c20001 with negotiated timeout 40000 for client /127.0.0.1:37575
+2014-02-15 15:58:49,804 [myid:2] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@349] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x2443448a1c20001, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:220)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+2014-02-15 15:58:49,805 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@1001] - Closed socket connection for client /127.0.0.1:37575 which had sessionid 0x2443448a1c20001
+2014-02-15 15:59:30,000 [myid:2] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x2443448a1c20001, timeout of 40000ms exceeded
+2014-02-15 15:59:30,001 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x2443448a1c20001
+2014-02-15 16:00:36,000 [myid:2] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x144344ede3b0001, timeout of 40000ms exceeded
+2014-02-15 16:00:36,001 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x144344ede3b0001
+2014-02-15 16:32:16,692 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x144344ede3b0000
+2014-02-15 16:32:20,840 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@197] - Accepted socket connection from /127.0.0.1:38507
+2014-02-15 16:32:20,844 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:ZooKeeperServer@839] - Client attempting to establish new session at /127.0.0.1:38507
+2014-02-15 16:32:20,875 [myid:2] - INFO  [CommitProcessor:2:ZooKeeperServer@595] - Established session 0x2443448a1c20002 with negotiated timeout 30000 for client /127.0.0.1:38507
+2014-02-15 16:33:13,540 [myid:2] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@349] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x2443448a1c20002, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:220)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+2014-02-15 16:33:13,541 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@1001] - Closed socket connection for client /127.0.0.1:38507 which had sessionid 0x2443448a1c20002
+2014-02-15 16:33:17,343 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@197] - Accepted socket connection from /127.0.0.1:38514
+2014-02-15 16:33:17,348 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:ZooKeeperServer@839] - Client attempting to establish new session at /127.0.0.1:38514
+2014-02-15 16:33:17,372 [myid:2] - INFO  [CommitProcessor:2:ZooKeeperServer@595] - Established session 0x2443448a1c20003 with negotiated timeout 30000 for client /127.0.0.1:38514
+2014-02-15 16:33:26,756 [myid:2] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@349] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x2443448a1c20003, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:220)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+2014-02-15 16:33:26,757 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@1001] - Closed socket connection for client /127.0.0.1:38514 which had sessionid 0x2443448a1c20003
+2014-02-15 16:33:36,000 [myid:2] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x2443448a1c20002, timeout of 30000ms exceeded
+2014-02-15 16:33:36,001 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x2443448a1c20002
+2014-02-15 16:33:52,000 [myid:2] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x2443448a1c20003, timeout of 30000ms exceeded
+2014-02-15 16:33:52,000 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x2443448a1c20003
+2014-02-15 16:34:00,291 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x344345430b70000
+2014-02-15 16:34:06,554 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@197] - Accepted socket connection from /127.0.0.1:38520
+2014-02-15 16:34:06,557 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:ZooKeeperServer@839] - Client attempting to establish new session at /127.0.0.1:38520
+2014-02-15 16:34:06,578 [myid:2] - INFO  [CommitProcessor:2:ZooKeeperServer@595] - Established session 0x2443448a1c20004 with negotiated timeout 30000 for client /127.0.0.1:38520
+2014-02-15 16:37:00,196 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x144344ede3b0002 type:create cxid:0x2 zxid:0x600000020 txntype:-1 reqpath:n/a Error Path:/master Error:KeeperErrorCode = NodeExists for /master
+2014-02-15 16:39:00,145 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x2443448a1c20004
+2014-02-15 16:39:00,165 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@1001] - Closed socket connection for client /127.0.0.1:38520 which had sessionid 0x2443448a1c20004
+2014-02-15 16:52:18,518 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@197] - Accepted socket connection from /127.0.0.1:38655
+2014-02-15 16:52:18,524 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:ZooKeeperServer@839] - Client attempting to establish new session at /127.0.0.1:38655
+2014-02-15 16:52:18,547 [myid:2] - INFO  [CommitProcessor:2:ZooKeeperServer@595] - Established session 0x2443448a1c20005 with negotiated timeout 4000 for client /127.0.0.1:38655
+2014-02-15 16:53:18,824 [myid:2] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@349] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x2443448a1c20005, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:220)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+2014-02-15 16:53:18,825 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@1001] - Closed socket connection for client /127.0.0.1:38655 which had sessionid 0x2443448a1c20005
+2014-02-15 16:53:22,000 [myid:2] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x2443448a1c20005, timeout of 4000ms exceeded
+2014-02-15 16:53:22,000 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x2443448a1c20005
+2014-02-15 17:06:31,047 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@197] - Accepted socket connection from /127.0.0.1:38772
+2014-02-15 17:06:31,050 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:ZooKeeperServer@839] - Client attempting to establish new session at /127.0.0.1:38772
+2014-02-15 17:06:31,072 [myid:2] - INFO  [CommitProcessor:2:ZooKeeperServer@595] - Established session 0x2443448a1c20006 with negotiated timeout 4000 for client /127.0.0.1:38772
+2014-02-15 17:07:31,414 [myid:2] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@349] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x2443448a1c20006, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:220)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+2014-02-15 17:07:31,415 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@1001] - Closed socket connection for client /127.0.0.1:38772 which had sessionid 0x2443448a1c20006
+2014-02-15 17:07:36,000 [myid:2] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x2443448a1c20006, timeout of 4000ms exceeded
+2014-02-15 17:07:36,001 [myid:2] - INFO  [ProcessThread(sid:2 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x2443448a1c20006
