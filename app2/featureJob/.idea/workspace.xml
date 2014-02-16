@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c5b9f56-5aca-4511-99e9-a7a67ac1a3b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="8c5b9f56-5aca-4511-99e9-a7a67ac1a3b7" name="Default" comment="" />
     <ignored path="featureJob.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -802,7 +800,7 @@
       <workItem from="1392529842826" duration="1695000" />
       <workItem from="1392539290594" duration="3057000" />
       <workItem from="1392556662614" duration="531000" />
-      <workItem from="1392557614170" duration="3949000" />
+      <workItem from="1392557614170" duration="4002000" />
     </task>
     <task id="LOCAL-00001" summary="feature job">
       <created>1392531197799</created>
@@ -824,11 +822,19 @@
       <created>1392562589310</created>
       <updated>1392562589310</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="socket&#10;">
+      <created>1392562615514</created>
+      <updated>1392562615514</updated>
+    </task>
+    <task id="LOCAL-00007" summary="socket&#10;">
+      <created>1392562647385</created>
+      <updated>1392562647385</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16779000" />
+    <option name="totallyTimeSpent" value="16832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="22" width="1248" height="778" extended-state="6" />
@@ -910,7 +916,8 @@
     <MESSAGE value="feature job2" />
     <MESSAGE value="client" />
     <MESSAGE value="socket" />
-    <option name="LAST_COMMIT_MESSAGE" value="socket" />
+    <MESSAGE value="socket&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="socket&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
