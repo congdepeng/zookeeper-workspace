@@ -17,7 +17,9 @@ public class ConfigService {
 		}
 		return Long.valueOf(value);
 	}
-	
+
+
+
 	public boolean getBoolan(String key,boolean defValue){
 		String value = this.get(key);
 		if(value==null){
