@@ -1,6 +1,6 @@
 package com.depeng.feature.zk.testcase;
 
-import com.depeng.feature.zk.common.ZkFeatureJobInstanceMock;
+import com.depeng.feature.job.FeatureJob;
 import com.depeng.feature.zk.common.ZkFeatureJobMember;
 
 import java.util.ArrayList;
@@ -9,28 +9,22 @@ import java.util.Set;
 
 public class ZkFeatureJobClientEventNotifyTest {
 	
-	private static List<ZkFeatureJobInstanceMock> instances = new ArrayList<ZkFeatureJobInstanceMock>();
-	
+
 	public static void main(String[] args) throws Exception {
-		
-		ZkFeatureJobInstanceMock inst1 = new ZkFeatureJobInstanceMock("host-1",9090);
-		instances.add(inst1);
+
+        FeatureJob inst1 = new FeatureJob("feature_job_ip-1",9090);
 		Thread.sleep(100);
 		
-		ZkFeatureJobInstanceMock inst2 = new ZkFeatureJobInstanceMock("host-2",9090);
-		instances.add(inst2);
+		FeatureJob inst2 = new FeatureJob("feature_job_ip-2",9090);
 		Thread.sleep(100);
 
-		ZkFeatureJobInstanceMock inst3 = new ZkFeatureJobInstanceMock("host-3",9090);
-		instances.add(inst3);
+		FeatureJob inst3 = new FeatureJob("feature_job_ip-3",9090);
 		Thread.sleep(100);
 
-		ZkFeatureJobInstanceMock inst4 = new ZkFeatureJobInstanceMock("host-4",9090);
-		instances.add(inst4);
+		FeatureJob inst4 = new FeatureJob("feature_job_ip-4",9090);
 
 		inst1.publishCustomizedEvent();
 		Thread.sleep(1000);
-
 
 
 		Set<ZkFeatureJobMember> members = inst1.getMembers();

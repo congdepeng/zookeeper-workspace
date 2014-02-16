@@ -14,6 +14,7 @@ import com.google.common.net.HostAndPort;
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
+import org.apache.curator.framework.api.GetChildrenBuilder;
 import org.apache.curator.framework.listen.ListenerContainer;
 import org.apache.curator.framework.recipes.cache.NodeCacheListener;
 import org.apache.curator.framework.recipes.cache.PathChildrenCache;
@@ -88,14 +89,37 @@ public class ZkFeatureJobClient extends LeaderSelectorListenerAdapter implements
         }
 
         // create a EPHEMERAL mapping to this client
-        this.registerToZk();
+        this.registerAsMember();
 		this.startMemberChangeListener();
     }
 
     /**
      * Register my self
      */
-    private void registerToZk() {
+    private void registerAsMember() {
+        try {
+            Path member = this.getMemberPath();
+            String hostName = hostAndPort.getHostText();
+            int port = hostAndPort.getPort();
+            String nodeName = hostName + ":" + port;
+            Path path = member.joinPath(nodeName);
+
+            String parentPath = path.getParent().toString();
+            Stat state = zkc.checkExists().forPath(parentPath);
+            if (state == null) {
+                zkc.create().forPath(parentPath);
+            }
+            state = zkc.checkExists().forPath(path.toString());
+            if (state == null) {
+                zkc.create().withMode(CreateMode.EPHEMERAL).forPath(path.toString());
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    private void registerAsLeader() {
         try {
             Path member = this.getMemberPath();
             String hostName = hostAndPort.getHostText();
@@ -154,6 +178,15 @@ public class ZkFeatureJobClient extends LeaderSelectorListenerAdapter implements
     public Set<ZkFeatureJobMember> getMembers() {
         return members;
     }
+    public ZkFeatureJobMember getLeader() {
+
+
+        // TODO: get leader
+        return null;
+    }
+
+
+
 
     public void addMemberUpdateListener(MemberUpdateListener listener) {
         if (listener != null) memberUpdateListenerListenerContainer.addListener(listener, executor);
@@ -172,12 +205,6 @@ public class ZkFeatureJobClient extends LeaderSelectorListenerAdapter implements
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    private byte[] toBytes(long x) {
-        ByteBuffer buffer = ByteBuffer.allocate(Long.SIZE / 8);
-        buffer.putLong(x);
-        return buffer.array();
     }
 
 

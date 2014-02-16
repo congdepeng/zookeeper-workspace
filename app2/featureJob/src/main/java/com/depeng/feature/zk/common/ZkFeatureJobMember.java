@@ -38,7 +38,7 @@ public class ZkFeatureJobMember {
 
 	@Override
 	public String toString() {
-		return Constant.PATH_FEATURE_JOB.concat( Constant.PATH_MEMBER +this.host + ":" + this.port).trim();
+		return Constant.PATH_FEATURE_JOB.concat( Constant.PATH_MEMBER +"/" +this.host + ":" + this.port).trim();
 	}
 
 	@Override
