@@ -27,6 +27,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="client" target="1.7" />
       <module name="featureJob" target="1.7" />
     </bytecodeTargetLevel>
   </component>

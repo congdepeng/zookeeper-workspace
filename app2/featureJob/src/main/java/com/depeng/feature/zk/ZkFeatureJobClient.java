@@ -1,10 +1,12 @@
 package com.depeng.feature.zk;
 
-import java.io.Closeable;
-import java.io.IOException;
+import java.io.*;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.nio.ByteBuffer;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -88,9 +90,72 @@ public class ZkFeatureJobClient extends LeaderSelectorListenerAdapter implements
             this.startLeaderElection();
         }
 
-        // create a EPHEMERAL mapping to this client
-        this.registerAsMember();
+        this.startSocketToExactFeature(9001); // start to wait for exact feature job
+        this.registerAsMember(); // create a EPHEMERAL mapping to this client
 		this.startMemberChangeListener();
+    }
+
+    private void startSocketToExactFeature(int jobPort) {
+        try {
+            ServerSocket serverSocket=new ServerSocket(jobPort);
+            Socket socket=serverSocket.accept();
+            InputStream is=socket.getInputStream();
+            BufferedReader br=new BufferedReader(new InputStreamReader(is));
+            OutputStream os=socket.getOutputStream();
+            PrintWriter pw=new PrintWriter(os);
+            String info=null;
+            while(!((info=br.readLine())==null)){
+                System.out.println("Get a exact feature task"+info);
+            }
+            String reply="result for exact feature";
+            pw.write(reply);
+            pw.flush();
+            pw.close();
+            os.close();
+            br.close();
+            is.close();
+            socket.close();
+            serverSocket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void startSocketAsMaster(int masterPort) {
+        try {
+            ServerSocket serverSocket=new ServerSocket(masterPort);
+            Socket socket=serverSocket.accept();
+            InputStream is=socket.getInputStream();
+            BufferedReader br=new BufferedReader(new InputStreamReader(is));
+            OutputStream os=socket.getOutputStream();
+            PrintWriter pw=new PrintWriter(os);
+            String info=null;
+            while(!((info=br.readLine())==null)){
+                System.out.println("Get a request a feature job request"+info);
+            }
+
+            Set<ZkFeatureJobMember> members = getMembers();
+            String jobInfo = "";
+            Random random = new Random(members.size());
+            int i = random.nextInt();
+            int count = 0;
+            for (ZkFeatureJobMember member : members) {
+                if (count == i) {
+                    jobInfo = member.toString();
+                }
+                count++;
+            }
+            pw.write(jobInfo);
+            pw.flush();
+            pw.close();
+            os.close();
+            br.close();
+            is.close();
+            socket.close();
+            serverSocket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -119,9 +184,9 @@ public class ZkFeatureJobClient extends LeaderSelectorListenerAdapter implements
     }
 
 
-    private void registerAsLeader() {
+    private void registerAsMaster() {
         try {
-            Path member = this.getMemberPath();
+            Path member = this.getMasterPath();
             String hostName = hostAndPort.getHostText();
             int port = hostAndPort.getPort();
             String nodeName = hostName + ":" + port;
@@ -178,15 +243,6 @@ public class ZkFeatureJobClient extends LeaderSelectorListenerAdapter implements
     public Set<ZkFeatureJobMember> getMembers() {
         return members;
     }
-    public ZkFeatureJobMember getLeader() {
-
-
-        // TODO: get leader
-        return null;
-    }
-
-
-
 
     public void addMemberUpdateListener(MemberUpdateListener listener) {
         if (listener != null) memberUpdateListenerListenerContainer.addListener(listener, executor);
@@ -237,6 +293,9 @@ public class ZkFeatureJobClient extends LeaderSelectorListenerAdapter implements
     private Path getMemberPath() {
         return this.getFeatureJobPath().joinPath(Constant.PATH_MEMBER);
     }
+    private Path getMasterPath() {
+        return this.getFeatureJobPath().joinPath(Constant.PATH_MASTER);
+    }
 
     public boolean isLeader() {
         return isLeader;
@@ -246,6 +305,8 @@ public class ZkFeatureJobClient extends LeaderSelectorListenerAdapter implements
         log.info("this service been elected as master");
         System.out.println(hostAndPort.getHostText() + ":" + hostAndPort.getPort() + " is now the leader.");
         isLeader = true;
+        registerAsMaster();
+        startSocketAsMaster(9002);
         synchronized (election) {
             election.wait();
         }
