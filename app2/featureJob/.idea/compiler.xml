@@ -22,12 +22,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="client" />
         <module name="featureJob" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="client" target="1.7" />
       <module name="featureJob" target="1.7" />
     </bytecodeTargetLevel>
   </component>
