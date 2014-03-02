@@ -1,6 +1,5 @@
 package com.depeng.feature.zk.common;
 
-import com.depeng.feature.zk.common.Constant;
 
 public class ZkFeatureJobMember {
 

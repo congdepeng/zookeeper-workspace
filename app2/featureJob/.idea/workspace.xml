@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c5b9f56-5aca-4511-99e9-a7a67ac1a3b7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureJob.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/common/ZkFeatureJobMember.java" afterPath="$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/common/ZkFeatureJobMember.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="featureJob.iws" />
@@ -71,10 +67,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ZkFeatureJobClient.java" pinned="true" current="true" current-in-tab="true">
+      <file leaf-file-name="ZkFeatureJobClient.java" pinned="true" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/ZkFeatureJobClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="31" selection-start="1889" selection-end="1907" vertical-scroll-proportion="-1.4949749" vertical-offset="799" max-vertical-offset="5763">
+            <state line="47" column="23" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5763">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZkFeatureJobClientTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/ZkFeatureJobClientTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="5" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="918">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigServiceTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/config/ConfigServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="5" selection-start="600" selection-end="600" vertical-scroll-proportion="1.5260274" vertical-offset="140" max-vertical-offset="833">
               <folding />
             </state>
           </provider>
@@ -89,28 +103,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HostAndPort.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/14.0.1/guava-14.0.1-sources.jar!/com/google/common/net/HostAndPort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="24" selection-start="4487" selection-end="4487" vertical-scroll-proportion="0.0" vertical-offset="2278" max-vertical-offset="4692">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FeatureJob.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../client/src/main/java/com/depeng/feature/job/FeatureJob.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1428">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FeatureJob.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/depeng/feature/job/FeatureJob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="5" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1479">
+            <state line="21" column="19" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeatureJobTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/depeng/feature/job/FeatureJobTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="5" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="748">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChildDataTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/common/ChildDataTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="5" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0" vertical-offset="179" max-vertical-offset="918">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZkFeatureJobMemberTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/common/ZkFeatureJobMemberTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="5" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
@@ -129,33 +152,6 @@
         <entry file="file://$PROJECT_DIR$/../client/src/main/resources/conf/config.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="119">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../client/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="12" selection-start="4245" selection-end="4245" vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="2176">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="413" selection-end="4252" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="2176">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constant.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/common/Constant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="36" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="323">
               <folding />
             </state>
           </provider>
@@ -199,7 +195,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/core/ZkFeatureJobInstanceMock.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/core/ZkFeatureJobClientEventNotifyTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/ZkFeatureJobClientEventNotifyTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/ZkFeatureJobClientTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/ZkFeatureJobInstance.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/common/ZkFeatureJobInstanceMock.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/config/ConfigService.java" />
@@ -207,15 +202,20 @@
         <option value="$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/testcase/ZkFeatureJobClientTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/testcase/ZkFeatureJobClientEventNotifyTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/testcase/ZkFeatureJobClientMemberChangeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/common/ZkFeatureJobMember.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/common/Constant.java" />
         <option value="$PROJECT_DIR$/../client/src/main/java/com/depeng/client/Client.java" />
         <option value="$PROJECT_DIR$/../client/pom.xml" />
         <option value="$PROJECT_DIR$/../client/src/main/java/com/depeng/feature/zk/ZkFeatureJobClient.java" />
         <option value="$PROJECT_DIR$/../client/src/main/java/com/depeng/feature/zk/ZkClientUtil.java" />
         <option value="$PROJECT_DIR$/../client/src/main/java/com/depeng/feature/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/depeng/feature/job/FeatureJob.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/ZkFeatureJobClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/depeng/feature/job/FeatureJob.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/depeng/feature/job/FeatureJobTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/common/ChildDataTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/common/ZkFeatureJobMember.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/common/ZkFeatureJobMemberTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/ZkFeatureJobClientTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/config/ConfigServiceTest.java" />
       </list>
     </option>
   </component>
@@ -238,7 +238,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -288,6 +288,166 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="featureJob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="featureJob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="depeng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="featureJob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="featureJob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="depeng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="featureJob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="featureJob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="depeng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="featureJob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="featureJob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="depeng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="job" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -381,6 +541,132 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="zk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="listener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="featureJob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="featureJob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="depeng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="featureJob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="featureJob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="depeng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="featureJob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="featureJob" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="depeng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="job" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -398,8 +684,23 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.depeng.feature.zk.config" />
+      <recent name="com.depeng.feature.zk" />
+      <recent name="com.depeng.feature.zk.common" />
+      <recent name="com.depeng.feature.job" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.depeng.feature.zk.common" />
       <recent name="com.depeng.feature.zk" />
@@ -758,6 +1059,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8c5b9f56-5aca-4511-99e9-a7a67ac1a3b7" name="Default" comment="" />
+      <changelist id="" name="New changelist" comment="" />
       <created>1392474341343</created>
       <updated>1392474341343</updated>
       <workItem from="1392474342742" duration="126000" />
@@ -769,6 +1071,7 @@
       <workItem from="1392557614170" duration="4002000" />
       <workItem from="1393779270304" duration="10000" />
       <workItem from="1393779281562" duration="10000" />
+      <workItem from="1393779324828" duration="183000" />
     </task>
     <task id="LOCAL-00001" summary="feature job">
       <created>1392531197799</created>
@@ -802,7 +1105,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16852000" />
+    <option name="totallyTimeSpent" value="17035000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="22" width="1248" height="778" extended-state="0" />
@@ -840,11 +1143,11 @@
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -863,8 +1166,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -895,37 +1198,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="12" selection-start="4245" selection-end="4245" vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="2176">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="413" selection-end="4252" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="2176">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/common/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/testcase/ZkFeatureJobClientMemberChangeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="8" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="660" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/common/ZkFeatureJobMember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="46" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="840" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/common/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="35" selection-start="294" selection-end="304" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="270">
@@ -1065,11 +1337,6 @@
         <state line="37" column="17" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="465" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/common/ChildData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1845" />
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/util/concurrent/ExecutorService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="28" selection-start="355" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5100" />
@@ -1083,11 +1350,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-recipes/2.3.0/curator-recipes-2.3.0-sources.jar!/org/apache/curator/framework/recipes/leader/LeaderSelector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="217" column="0" selection-start="8097" selection-end="8097" vertical-scroll-proportion="0.0" vertical-offset="2286" max-vertical-offset="7440" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/config/ConfigService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="9" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1500" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/common/Path.java">
@@ -1108,11 +1370,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/conf/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="0.04373178" vertical-offset="0" max-vertical-offset="343" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/common/ZkFeatureJobMember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="46" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/common/Constant.java">
@@ -1178,14 +1435,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/depeng/feature/job/FeatureJob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="5" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1479">
+        <state line="21" column="19" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/depeng/feature/job/FeatureJobTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="5" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/common/ChildData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="16" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="2091">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/common/ChildDataTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="5" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0" vertical-offset="179" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/common/ZkFeatureJobMember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="25" selection-start="65" selection-end="65" vertical-scroll-proportion="0.08173077" vertical-offset="0" max-vertical-offset="867">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/common/ZkFeatureJobMemberTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="5" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/ZkFeatureJobClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="31" selection-start="1889" selection-end="1907" vertical-scroll-proportion="-1.4949749" vertical-offset="799" max-vertical-offset="5831">
+        <state line="47" column="23" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5763">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/ZkFeatureJobClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="5" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/depeng/feature/zk/config/ConfigService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="20" selection-start="208" selection-end="208" vertical-scroll-proportion="0.11764706" vertical-offset="0" max-vertical-offset="1700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/depeng/feature/zk/config/ConfigServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="5" selection-start="600" selection-end="600" vertical-scroll-proportion="1.5260274" vertical-offset="140" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
